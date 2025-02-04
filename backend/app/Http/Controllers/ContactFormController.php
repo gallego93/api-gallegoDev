@@ -23,7 +23,7 @@ class ContactFormController extends Controller
 
         // Opcional: Enviar un correo con los datos del formulario
         Mail::send('emails.contact', $validatedData, function ($message) use ($validatedData) {
-            $message->to('dsgallego@oaksoft.tech') // Cambiar por tu correo de administración
+            $message->to('danielgc@gallegodev.tech') // Cambiar por tu correo de administración
                 ->subject('Nuevo mensaje de contacto: ' . $validatedData['subject']);
         });
 

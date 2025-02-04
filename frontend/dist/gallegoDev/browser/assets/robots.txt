@@ -1,0 +1,6 @@
+# General instructions for all bots
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://www.gallegodev.tech/sitemap.xml

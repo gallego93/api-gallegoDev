@@ -1,0 +1,113 @@
+{
+  "configVersion": 1,
+  "timestamp": 1738550592967,
+  "index": "/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/145.b61bcb748c4b75fd.js",
+        "/217.8514f4a5bf0dd63e.js",
+        "/31.de2b73e86a85d726.js",
+        "/341.62fe21aed1861de8.js",
+        "/448.0131c00789775d91.js",
+        "/63.e7453f6d643ee2a8.js",
+        "/722.d90ebd331dff19a9.js",
+        "/86.78791af182e494ca.js",
+        "/956.3d5635268428871a.js",
+        "/common.bb8d33b43146713d.js",
+        "/favicon.ico",
+        "/index.html",
+        "/main.2a9db81f58053e26.js",
+        "/manifest.webmanifest",
+        "/polyfills.5a9900552a5222d5.js",
+        "/runtime.b81d88233e6e86d6.js",
+        "/styles.56d138078207247e.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/assets/icons/125x125.png",
+        "/assets/icons/128x128.png",
+        "/assets/icons/144x144.png",
+        "/assets/icons/192x192.png",
+        "/assets/icons/384x384.png",
+        "/assets/icons/512x512.png",
+        "/assets/icons/72x72.png",
+        "/assets/icons/96x96.png",
+        "/assets/icons/apple-touch-icon.png",
+        "/assets/icons/gallegoDev.webp",
+        "/assets/img/gallegoDev.jpeg",
+        "/assets/img/gallegoDev.png",
+        "/assets/img/gallegoDev.webp",
+        "/assets/robots.txt"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/145.b61bcb748c4b75fd.js": "58aa5ba8524ec7f2090d9875c0e60aaddf4707b6",
+    "/217.8514f4a5bf0dd63e.js": "23c6b161148a684d3e1cfdf7fc8052f2da73fb02",
+    "/31.de2b73e86a85d726.js": "b35288a5a1b2954c064d65ebb33699aeae65364f",
+    "/341.62fe21aed1861de8.js": "b442cdcb13cfbde9375effb8bd13ce65ce5ccffb",
+    "/448.0131c00789775d91.js": "654d40fb7941979aa410225718b4cf997c6f5cc1",
+    "/63.e7453f6d643ee2a8.js": "26c6472291194c16f3065d4419fed4e622831be9",
+    "/722.d90ebd331dff19a9.js": "aca7f248ae14b928e0592468e6169ebf9c81a837",
+    "/86.78791af182e494ca.js": "61f470483290073dedfc835aa550debea110ce15",
+    "/956.3d5635268428871a.js": "6cf75a0ee30dc157ff874cb56a1238c1a264be99",
+    "/assets/icons/125x125.png": "40e9ab47297d0aa304f97a6a2743311d95071539",
+    "/assets/icons/128x128.png": "322df152685613ea8dd8f03a02a9925e5d8b09e9",
+    "/assets/icons/144x144.png": "2cf23f3676e8aa61b2565e200430ee4f06a42816",
+    "/assets/icons/192x192.png": "e80120597702bf46b65aa8c3bccf4b1246ab3175",
+    "/assets/icons/384x384.png": "45a0946cabe0ad0a9f60f0e5b519c2b3fa5818aa",
+    "/assets/icons/512x512.png": "80489713dd777ca71f4fed46a99fa773849fd6c5",
+    "/assets/icons/72x72.png": "aaaeef7e79add9d3f3d0ea61c4301172420b62be",
+    "/assets/icons/96x96.png": "78156f4e51449d6b01c42a4715a38c1ab3790783",
+    "/assets/icons/apple-touch-icon.png": "a1e147fd44557047aa0ae157960f9e05dde434a1",
+    "/assets/icons/gallegoDev.webp": "8bc8782faf9705e8c50b24e409cb6113acb1013c",
+    "/assets/img/gallegoDev.jpeg": "51246b839549d098d38dfd5f15c23dc2fbda668a",
+    "/assets/img/gallegoDev.png": "a1e147fd44557047aa0ae157960f9e05dde434a1",
+    "/assets/img/gallegoDev.webp": "cfad1948b26d74a3143985159056db0a88380744",
+    "/assets/robots.txt": "0cec255640b03a250bf93a65226fcfbedf462659",
+    "/common.bb8d33b43146713d.js": "9a4eda0a4e5e73c782e407ff580cde5bffc5a162",
+    "/favicon.ico": "92a24377471dbe8fa0bf5f636dbd6261597fd5ae",
+    "/index.html": "e66d072176a6c02fbfdf78b95cf5123cef3c29ab",
+    "/main.2a9db81f58053e26.js": "ddca75d443ee6dd164c230c7dc9c442e91952b38",
+    "/manifest.webmanifest": "2fb8d64c031eeed93f6281f461cb155f7f9f4804",
+    "/polyfills.5a9900552a5222d5.js": "2d5b91a9733b5a5fab06dafb32c3896cbb173363",
+    "/runtime.b81d88233e6e86d6.js": "ce5cec0e8d30bede219f38521d8223dd8fcb171f",
+    "/styles.56d138078207247e.css": "d7261e875ce5ac90add1848739c7faefe0bba0d7"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}

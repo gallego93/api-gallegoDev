@@ -1,45 +1,72 @@
 version: '3.8'
 
-services:
-    laravel:
-        build:
-            context: .
-            dockerfile: Dockerfile
-        container_name: laravel_app
-        ports:
-            - "9000:80"
-        volumes:
-            - .:/var/www/html
-        networks:
-            - app-network
-        environment:
-            - APP_ENV=production
-            - APP_DEBUG=false
-            - APP_KEY=base64:GENERATE_YOUR_KEY_HERE
-            - DB_HOST=db
-            - DB_PORT=3306
-            - DB_DATABASE=tu_base_datos
-            - DB_USERNAME=tu_usuario
-            - DB_PASSWORD=tu_contraseña
-
-    db:
-        image: mysql:8.0
-        container_name: laravel_db
-        ports:
-            - "3306:80"
-        environment:
-            MYSQL_DATABASE: laravel_db
-            MYSQL_ROOT_PASSWORD: rootpassword
-            MYSQL_USER: laravel_user
-            MYSQL_PASSWORD: secret
-        volumes:
-            - db_data:/var/lib/mysql
-        networks:
-            - app-network
-
 networks:
-    app-network:
-        driver: bridge
+  app-network:
+    driver: bridge
+
+services:
+  laravel:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: laravel_app
+    ports:
+      - "9000:9000"
+    volumes:
+      - .:/var/www/html
+    networks:
+      - app-network
+    environment:
+      - APP_ENV=production
+      - APP_DEBUG=false
+      - APP_KEY=base64:GENERATE_YOUR_KEY_HERE
+      - DB_HOST=db
+      - DB_PORT=3306
+      - DB_DATABASE=tu_base_datos
+      - DB_USERNAME=tu_usuario
+      - DB_PASSWORD=tu_contraseña
+
+  db:
+    image: mysql:8.0
+    container_name: laravel_db
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_DATABASE: tu_base_datos
+      MYSQL_USER: tu_usuario
+      MYSQL_PASSWORD: tu_contraseña
+      MYSQL_ROOT_PASSWORD: tu_contraseña_root
+    volumes:
+      - db_data:/var/lib/mysql
+    networks:
+      - app-network
+
+  angular:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: angular_app
+    ports:
+      - "4000:80"
+    networks:
+      - app-network
+    depends_on:
+      - laravel
+
+  nginx:
+    image: nginx:latest
+    container_name: nginx_server
+    ports:
+      - "8080:80"
+      - "443:443"
+    volumes:
+      - ./nginx/default.conf:/etc/nginx/sites-enabled/default.conf
+      - ./ssl:/etc/ssl
+    depends_on:
+      - laravel
+      - angular
+    networks:
+      - app-network
 
 volumes:
-    db_data:
+  db_data:
